@@ -1,7 +1,10 @@
 # OrangeHRM Automation Testing
 
-This project contains automated test cases for the **OrangeHRM demo website** using **Python, Selenium WebDriver, and unittest**.
-The tests verify login functionality and some features of the **Admin module**.
+## Overview
+
+This project demonstrates **automated testing of the OrangeHRM demo website** using **Python, Selenium WebDriver, and the unittest framework**.
+
+The goal of this project is to automate testing of the **Login functionality and Admin module** of OrangeHRM. The project includes both **positive and negative test cases**, and screenshots are captured during test execution.
 
 Website used for testing:
 https://opensource-demo.orangehrmlive.com/
@@ -17,7 +20,26 @@ https://opensource-demo.orangehrmlive.com/
 
 ---
 
-## Test Cases
+## Test Case Documentation
+
+The detailed manual test cases for the OrangeHRM Admin module are documented in the Excel sheet included in this repository.
+
+**File:** `orangehrm_admin_test_cases.xlsx`
+
+The Excel sheet contains:
+
+* Test Case ID
+* Test Scenario
+* Test Steps
+* Test Data
+* Expected Result
+* Actual Result
+* Status
+* Screenshot reference
+
+---
+
+## Automated Test Cases
 
 ### Positive Test Cases
 
@@ -42,32 +64,58 @@ https://opensource-demo.orangehrmlive.com/
 
 ---
 
-## Project Files
+## Project Structure
 
 ```
-orangehrm_test.py
-README.md
-requirements.txt
-screenshots/
+orangehrm-selenium-test-automation
+│
+├── orangehrm_test.py
+├── README.md
+├── requirements.txt
+├── orangehrm_admin_test_cases.xlsx
+│
+└── screenshots
+    ├── TC01_valid_login.png
+    ├── TC02_admin_module.png
+    ├── TC03_system_users.png
+    ├── TC04_search_user.png
+    ├── TC05_reset_search.png
+    ├── TC06_add_user.png
+    ├── TC07_user_role.png
+    ├── TC08_dashboard.png
+    ├── TC09_admin_menu.png
+    ├── TC10_logout.png
+    ├── TC11_invalid_password.png
+    ├── TC12_empty_username.png
+    ├── TC13_empty_password.png
+    ├── TC14_invalid_username.png
+    └── TC15_blank_login.png
 ```
 
 ---
 
-## Running the Project
+## How to Run the Project
 
-1. Install Selenium
+### 1 Install Dependencies
 
 ```
 pip install selenium
 ```
 
-2. Run the test script
+or
+
+```
+pip install -r requirements.txt
+```
+
+### 2 Run the Test Script
 
 ```
 python orangehrm_test.py
 ```
 
 ---
+
 
 # Screenshots of Test Execution
 
@@ -160,4 +208,3 @@ python orangehrm_test.py
 ![Blank Login](screenshots/TC15_blank_login.png)
 
 ---
-
